@@ -22,9 +22,7 @@ This project is a **simple RESTful API** built using **Go (Golang)**, **Gin fram
 ## Folder Structure
 ```
 go-mysql-crud/
-│
-├── cmd/
-│ └── main.go
+
 │
 ├── config/
 │ └── db.go
@@ -45,6 +43,8 @@ go-mysql-crud/
 │ └── routes.go
 │
 ├── go.mod
+├── go.sum
+├── main.go
 └── README.md
 ```
 
