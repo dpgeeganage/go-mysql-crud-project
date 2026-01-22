@@ -20,7 +20,7 @@ This project is a **simple RESTful API** built using **Go (Golang)**, **Gin fram
 - Controller → Service → Repository → Database
 
 ## Folder Structure
-
+```
 go-mysql-crud/
 │
 ├── cmd/
@@ -46,6 +46,7 @@ go-mysql-crud/
 │
 ├── go.mod
 └── README.md
+```
 
 ## Technologies Used
 
