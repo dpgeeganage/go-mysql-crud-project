@@ -7,9 +7,12 @@ import (
 
 // SetupRoutes initializes the API routes
 func SetupRoutes(router *gin.Engine) {
-	router.POST("/users", controller.CreateUser)
-	router.GET("/users/:id", controller.GetUserByID)
-	router.GET("/users", controller.GetAllUsers)
-	router.PUT("/users/:id", controller.UpdateUser)
-	router.DELETE("/users/:id", controller.DeleteUser)
+	userRoutes := router.Group("/users")
+	{
+		userRoutes.POST("/", controller.CreateUser)
+		userRoutes.GET("/:id", controller.GetUserByID)
+		userRoutes.GET("/", controller.GetAllUsers)
+		userRoutes.PUT("/:id", controller.UpdateUser)
+		userRoutes.DELETE("/:id", controller.DeleteUser)
+	}
 }
